@@ -1,0 +1,23 @@
+.parent {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.productTractBtn {
+  border: 1px solid #ffffff;
+  padding: 15px 20px;
+  background: inherit;
+  width: 100%;
+
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .parent {
+    padding: 0 20px;
+  }
+  .productTractBtn {
+    width: auto;
+  }
+}

@@ -1,0 +1,36 @@
+.navbar_parent {
+  background: #000000;
+  padding: 10px 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  height: 50px;
+}
+.first_section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.second_section {
+  display: flex;
+  align-items: center;
+}
+.second_section_first {
+  display: flex;
+  gap: 0px;
+}
+.hamburger {
+  display: flex;
+
+  cursor: pointer;
+}
+@media only screen and (min-width: 1200px) {
+  .second_section_first {
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}

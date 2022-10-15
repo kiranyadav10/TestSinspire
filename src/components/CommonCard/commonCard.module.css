@@ -1,0 +1,19 @@
+.common_card_parent {
+  min-height: 470px;
+  margin: auto;
+  background: #ffffff;
+  border: 1.5px solid #000000;
+  padding: 15px 0;
+  cursor: pointer;
+}
+/* @media screen and (max-width: 1020px) {
+  .common_card_parent {
+    width: 320px;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .common_card_parent {
+    width: auto;
+  }
+}

@@ -1,0 +1,23 @@
+.product_footer_parent {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+.product_footer_first_section {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+.product_icon_text_parent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product_footer_second_section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #D95D37;
+  text-decoration: none;
+}

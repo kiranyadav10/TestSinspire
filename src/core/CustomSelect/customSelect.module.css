@@ -1,0 +1,88 @@
+.select_box {
+  position: relative;
+  display: block;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", "Segoe UI", "Calibri", "Arial",
+    sans-serif;
+  font-size: 18px;
+  color: #60666d;
+}
+
+.select_box_current {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: 1.2px solid #000000;
+}
+.select_box_current:focus + .select_box_list {
+  opacity: 1;
+  animation-name: none;
+}
+.select_box_current:focus + .select_box_list .select_box_option {
+  cursor: pointer;
+}
+.select_box_current:focus .select_box_icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+.select_box_icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  transition: 0.2s ease;
+}
+.select_box_value {
+  display: flex;
+}
+.select_box_input {
+  display: none;
+}
+.select_box_input:checked + .select_box_input_text {
+  display: block;
+}
+.select_box_input_text {
+  display: none;
+  width: 130px;
+  margin: 0;
+  padding: 15px;
+  background-color: #fff;
+  color: #151a01;
+  white-space: nowrap;
+  caret-color: transparent;
+
+  overflow: hidden;
+  /* This is needed for select tag overflow text don;t remove white space after ... */
+  text-overflow: "...   ";
+}
+.select_box_list {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  animation-name: HideList;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: step-start;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.select_box_option {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+}
+.select_box_option:hover,
+.select_box_option:focus {
+  color: #546c84;
+  background-color: #fbfbfb;
+}
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}

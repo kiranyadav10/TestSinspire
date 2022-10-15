@@ -1,0 +1,33 @@
+.userProfileParent {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.first_section {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first_section h1 {
+  font-size: 14px;
+}
+.first_section p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+
+.second_section {
+  display: flex;
+  align-items: center;
+}
+.profile_image {
+  border-radius: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .userProfileParent {
+    width: auto;
+  }
+}

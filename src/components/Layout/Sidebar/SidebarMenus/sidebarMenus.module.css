@@ -1,0 +1,103 @@
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.logoContainer {
+  display: flex;
+  align-items: flex-start;
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+.logo {
+  display: block;
+}
+.librariesContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    height: 40px;
+    padding: 10px 20px 10px;
+    background-color: black;
+    font-family: "DM Sans";
+}
+.serachContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 14px;
+    height: 40px;
+    padding: 10px 20px 10px;
+    color: black;
+    font-family: "DM Sans";
+}
+
+.folderContauner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 20px 10px;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+}
+.folderAddIcon {
+  outline: 1px;
+  border: 1px solid #E3E6EA;
+  background: #F4F4F4;
+  border-radius: 2px;
+}
+
+.folderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 20px 7px;
+}
+.folderConatinerFirst {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.toogleMenuButton{
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.openToogle{
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+.openSubMenus{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap:0.1rem;
+}
+.closeSubMenus{
+  height: 0;
+  overflow: hidden;
+}
+.menuContainer::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.menuContainer::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+.menuContainer::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #76757566;
+}

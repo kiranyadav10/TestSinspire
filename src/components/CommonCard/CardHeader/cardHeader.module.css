@@ -1,0 +1,32 @@
+.product_root_parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.product_header_parent {
+  display: flex;
+  gap: 10px;
+}
+.image {
+  border-radius: 100%;
+}
+
+.first_section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.space_between {
+  display: flex;
+  justify-content: space-between;
+}
+.second_section p {
+  color: #151a01;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

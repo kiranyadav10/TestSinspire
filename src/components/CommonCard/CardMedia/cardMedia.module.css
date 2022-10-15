@@ -1,0 +1,14 @@
+.card_media_parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  background: #d9d9d9;
+}
+.play_button{
+    cursor: pointer;
+    filter: invert(100%);
+    position: relative;
+    top: -50%;
+    z-index: 10000;
+}
