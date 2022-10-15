@@ -1,6 +1,5 @@
 import React from "react";
 import { Divider, Text } from "@chakra-ui/react";
-// import styles from "./SidebarFooterMenus.modules.css"
 import styles from "./SidebarFooterMenus.module.css";
 import { BsFacebook } from "react-icons/bs";
 import { FiArrowUpRight } from "react-icons/fi";
