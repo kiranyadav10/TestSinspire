@@ -124,7 +124,7 @@ const SidebarMenus = () => {
             FOLDERS
           </Text>
           <IoAddSharp
-            onClick={onOpen}
+            // onClick={onOpen}
             fontSize="1.2rem"
             color="#9CA0A8"
             className={styles.folderAddIcon}
